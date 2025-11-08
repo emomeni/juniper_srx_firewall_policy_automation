@@ -2,7 +2,7 @@
 
 A Python-based automation tool for managing security policies on Juniper SRX firewalls using PyEZ (junos-eznc). This solution supports multi-device deployments with YAML-driven configuration management.
 
-## 🚀 Features
+## Features
 
 - ✅ **Multi-Device Support** - Deploy policies to multiple SRX firewalls simultaneously
 - ✅ **YAML-Driven Configuration** - Easy-to-manage device inventory and policy definitions
@@ -13,7 +13,7 @@ A Python-based automation tool for managing security policies on Juniper SRX fir
 - ✅ **Comprehensive Error Handling** - Graceful handling of connection and configuration errors
 - ✅ **Exclusive Configuration Mode** - Prevents configuration conflicts
 
-## 📋 Prerequisites
+## Prerequisites
 
 ### Software Requirements
 - Python 3.7 or higher
@@ -32,7 +32,7 @@ set system services netconf ssh
 commit
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 srx-automation/
@@ -42,7 +42,7 @@ srx-automation/
 └── README.md                # This file
 ```
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone or download the project files**
    ```bash
@@ -59,7 +59,7 @@ srx-automation/
    - Edit `devices.yaml` with your SRX firewall details
    - Edit `policies.yaml` with your security policies
 
-## ⚙️ Configuration
+## Configuration
 
 ### devices.yaml
 
