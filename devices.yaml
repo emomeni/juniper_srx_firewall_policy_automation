@@ -1,0 +1,23 @@
+# SRX Device Inventory
+# Save as: devices.yaml
+
+- host: 192.168.1.1
+  user: admin
+  password: password
+
+# Example for multiple firewalls
+# - host: 192.168.1.2
+#   user: admin
+#   password: password
+
+# - host: 10.10.10.5
+#   user: netops
+#   password: mySecret123
+
+# - host: srx-branch-01.company.com
+#   user: automation
+#   password: AutoPass123
+
+# - host: srx-datacenter.company.com
+#   user: automation
+#   password: AutoPass123
