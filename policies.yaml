@@ -1,0 +1,23 @@
+# Juniper SRX Security Policies Configuration
+# Save as: policies.yaml
+
+- from_zone: trust
+  to_zone: untrust
+  policy_name: allow-web
+  source_addresses: [any]
+  destination_addresses: [any]
+  applications: [junos-http, junos-https]
+  action: permit
+  log_session_init: true
+  log_session_close: true
+  description: Allow HTTP and HTTPS traffic
+
+- from_zone: untrust
+  to_zone: dmz
+  policy_name: allow-ssh-mgmt
+  source_addresses: [mgmt-network]
+  destination_addresses: [server-01]
+  applications: [junos-ssh]
+  action: permit
+  log_session_init: true
+  description: Allow SSH from management to server
